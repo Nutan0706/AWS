@@ -1,0 +1,18 @@
+1.Security Groups 
+- Firewall or protection of Instances
+- Security groups are stateful which means any changes applied to incoming rule is also applied to outgoing rule 
+  e.g. If you allow an incoming traffic on port 80, the outgoing traffic on port 80 will be automatically allowed.
+- It is the first layer of defense or protection. 
+- All the rules are applied to an Instance.
+- All the rules are evaluated before they allow a Traffic  
+
+2.NACL
+- Firewall or Protection of the Subnet
+- These are Stateless
+- If you allow an incoming port 80, you would also need to apply the rule for outgoing traffic.
+- This is the second layer of defense and an additional layer of protection.
+- In the case of NACL, the rules are applied in the order of their priority, wherein the priority is indicated by the rule number assigned.
+- Rules are evaluated based on their priority
+
+.
+
